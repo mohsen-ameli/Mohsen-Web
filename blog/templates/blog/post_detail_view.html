@@ -1,0 +1,109 @@
+{% extends "blog/base.html" %}\
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+  <!-- detail of the post -->
+  <br/>
+  <div class="col-12 col-md-a0 mb-0 mx-auto">
+    <div class="card bg-dark text-white">
+      {% if post.image %}
+        <img src="{{ post.image.url }}" class="card-img-top">
+      {% endif %}
+      <div class="card-body">
+
+        <div class="card-title">
+          <a>{{ post.title }}</a>
+          <small class="text-muted">{{ post.publish_date }} | {{ comments.count }} Comments</small>
+        </div>
+
+        <div class="card-text">
+          <p>{{ post.content }}</p>
+        </div>
+
+        <div class="row">
+
+          <form action="{% url 'blog:home' %}">
+            <div style="margin-left: 15px;">
+              <button class="btn btn-outline-light">Home Page</button>
+            </div>
+          </form>
+
+          <form action="{{ post.get_update_url }}">
+            <div style="margin-left: 5px;">
+              <button class="btn btn-outline-info">Update</button>
+            </div>
+          </form>
+
+          <form action="{{ post.get_delete_url }}">
+            <div style="margin-left: 5px;">
+              <button class="btn btn-outline-danger">DELETE</button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <br/>
+  <!--Ending-->
+
+  <hr/>
+  <br/>
+
+  <!-- Create Comment -->
+  <form action="." method="post">
+    {% csrf_token %}
+
+    <div class="col-12 col-md-a0 mb-0 mx-auto">
+      <div class="card bg-light">
+        <div class="card-body">
+
+          {{ form|crispy }}
+          <br/>
+          <input class="btn btn-outline-success" type="submit" value="Save">
+
+        </div>
+      </div>
+    </div>
+
+  </form>
+  <!-- Ending -->
+
+  <br/>
+  <hr/>
+
+  <!-- Comments -->
+  {% for comment in comments %}
+      <br/>
+      <div>
+        <blockquote class="blockquote" cite="https://www.huxley.net/bnw/four.html"> 
+          <a>{{ comment.title }}</a>
+          <p class="mb-0">{{ comment.content }}</p>
+          <footer><small class="text-muted">By {{ comment.user }} | {{ comment.publish_date|timesince }} ago</small></footer>
+        </blockquote>
+      </div>
+      
+      
+      <!--
+      <div class="col-12 col-md-a0 mb-0 mx-auto">
+        <div class="card bg-warning text-white">
+          <div class="card-body">
+
+            <div class="card-title">
+              <a>{{ comment.title }}</a>
+              <small class="text-muted">{{ comment.publish_date|timesince }}</small>
+            </div>
+
+            <div class="card-text">
+              <p>{{ comment.content }}</p>
+            </div>
+
+          </div>
+        </div>
+      </div>-->
+      
+  {% endfor %}
+  <!--Ending-->
+
+{% endblock %}

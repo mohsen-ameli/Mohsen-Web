@@ -1,0 +1,27 @@
+{% extends "blog/base.html" %}
+
+{% block content %}
+  {% for post in object_list %}
+    <br/>
+    <div class="col-12 col-md-a0 mb-0 mx-auto">
+      <div class="card bg-dark text-white">
+        {% if post.image %}
+          <img src="{{ post.image.url }}" class="card-img-top">
+        {% endif %}
+        <div class="card-body">
+
+          <div class="card-title">
+            <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
+            <small class="text-muted">{{ post.publish_date }}</small>
+          </div>
+
+          <div class="card-text text-light">
+            <p>{{ post.content|linebreaks|truncatewords:60 }}</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+  <br/>
+{% endblock %}

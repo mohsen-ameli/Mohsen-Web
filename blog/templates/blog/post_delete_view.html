@@ -1,0 +1,29 @@
+{% extends "blog/base.html" %}
+
+{% block content %}
+
+  <form method="post">
+    {% csrf_token %}
+    <br/>
+    <div class="col-12 col-md-a0 mb-0 mx-auto">
+      <div class="card bg-dark text-white">
+        <div class="card-body">
+
+          <div class="card-title">
+            <a>{{ object_list.title }}</a>
+            <small class="text-muted">{{ object_list.publish_date }}</small>
+          </div>
+
+          <div class="card-text">
+            <p>{{ object_list.content }}</p>
+          </div>
+
+          <button class="btn btn-outline-danger">Seriously ?</button>
+
+        </div>
+      </div>
+    </div>
+
+  </form>
+  <br/>
+{% endblock %}
