@@ -17,14 +17,14 @@
 
       <li class="nav-item">
         <a class="nav-link" href="/">
-          <span class="fa fa-home" style="color: rgb(26, 25, 25)"></span>&nbsp; Home
+          <span class="fa fa-home" style="color: rgb(252, 252, 252)"></span>&nbsp; Home
         </a>
       </li>
 
       {% if user.is_authenticated %}
         <li class="nav-item">
           <a class="nav-link" href="/create">
-            <span class="fas fa-feather" style="color: rgb(26, 25, 25)"></span>&nbsp; Post
+            <span class="fas fa-feather" style="color: rgb(252, 252, 252)"></span>&nbsp; Post
           </a>
         </li>
       {% endif %}
@@ -32,13 +32,13 @@
       {% if user.is_superuser %}
         <li class="nav-item">
           <a class="nav-link" href="/api">
-            <span class="fa fa-chart-bar" style="color: rgb(26, 25, 25)"></span>&nbsp; Api
+            <span class="fa fa-chart-bar" style="color: rgb(252, 252, 252)"></span>&nbsp; Api
           </a>
         </li>
 
         <li class="nav-item">
           <a class="nav-link" href="/api/BlogPost">
-            <span class="fa fa-chart-bar" style="color: rgb(26, 25, 25)"></span>&nbsp; Api Posts
+            <span class="fa fa-chart-bar" style="color: rgb(252, 252, 252)"></span>&nbsp; Api Posts
           </a>
         </li>
       {% endif %}
@@ -57,19 +57,19 @@
         {% if user.is_authenticated %}
           <li class="nav-item-right">
               <a class="nav-link" href="/logout">
-                <span class="fa fa-sign-out" style="color: rgb(26, 25, 25)"></span>&nbsp; Log Out
+                <span class="fa fa-sign-out" style="color: rgb(252, 252, 252)"></span>&nbsp; Log Out
               </a>
           </li>
         {% else %}
           <li class="nav-item-right">
             <a class="nav-link" href="/login">
-              <span class="fa fa-sign-in" style="color: rgb(26, 25, 25)"></span>&nbsp; Log In
+              <span class="fa fa-sign-in" style="color: rgb(252, 252, 252)"></span>&nbsp; Log In
             </a>
           </li>
 
           <li class="nav-item-right">
             <a class="nav-link" href="/register">
-              <span class="fa fa-user-plus" style="color: rgb(26, 25, 25)"></span>&nbsp; Sign Up
+              <span class="fa fa-user-plus" style="color: rgb(252, 252, 252)"></span>&nbsp; Sign Up
             </a>
           </li>
         {% endif %}
