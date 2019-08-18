@@ -25,7 +25,10 @@ def post_create_view(request):
     form = PostCreateForm(request.POST or None, request.FILES or None)
 
     if form.is_valid():
-        form.save()
+        obj = form.save(commit=False)
+        obj.user = request.user
+        obj.save()
+        form = PostCreateForm()
     template_name = "blog/post_create.html"
     context = {"form": PostCreateForm}
     return render(request, template_name, context)

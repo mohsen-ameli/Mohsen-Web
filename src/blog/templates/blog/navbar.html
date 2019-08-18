@@ -6,8 +6,8 @@
 <script src="https://kit.fontawesome.com/5f5fa5bcd8.js"></script>
 
 <nav class="navbar navbar-expand-lg navbar-light color-nav">
-  <a class="navbar-brand logo" href="/">Persian Empire</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <a class="navbar-brand logo" href="/">Mohsen's Blog</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
@@ -17,14 +17,20 @@
 
       <li class="nav-item">
         <a class="nav-link" href="/">
-          <span class="fa fa-home" style="color: rgb(252, 252, 252)"></span>&nbsp; Home
+          <span class="fa fa-home"></span>&nbsp; Home
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="https://persiaempire.herokuapp.com/">
+          <span class="fa fa-atom"></span>&nbsp; Persian Empire
         </a>
       </li>
 
       {% if user.is_authenticated %}
         <li class="nav-item">
           <a class="nav-link" href="/create">
-            <span class="fas fa-feather" style="color: rgb(252, 252, 252)"></span>&nbsp; Post
+            <span class="fas fa-feather"></span>&nbsp; Post
           </a>
         </li>
       {% endif %}
@@ -32,13 +38,13 @@
       {% if user.is_superuser %}
         <li class="nav-item">
           <a class="nav-link" href="/api">
-            <span class="fa fa-chart-bar" style="color: rgb(252, 252, 252)"></span>&nbsp; Api
+            <span class="fa fa-chart-bar"></span>&nbsp; Api
           </a>
         </li>
 
         <li class="nav-item">
           <a class="nav-link" href="/api/BlogPost">
-            <span class="fa fa-chart-bar" style="color: rgb(252, 252, 252)"></span>&nbsp; Api Posts
+            <span class="fa fa-chart-bar"></span>&nbsp; Api Posts
           </a>
         </li>
       {% endif %}
@@ -49,7 +55,7 @@
         <li class="nav-item-right">
           <a class="nav-link disabled" href="#">
             {% if user.is_authenticated %}
-              {{ user }}
+              <span class="fa fa-user"></span>&nbsp; {{ user }}
             {% endif %}
           </a>
         </li>
@@ -57,19 +63,19 @@
         {% if user.is_authenticated %}
           <li class="nav-item-right">
               <a class="nav-link" href="/logout">
-                <span class="fa fa-sign-out" style="color: rgb(252, 252, 252)"></span>&nbsp; Log Out
+                <span class="fa fa-sign-out"></span>&nbsp; Log Out
               </a>
           </li>
         {% else %}
           <li class="nav-item-right">
             <a class="nav-link" href="/login">
-              <span class="fa fa-sign-in" style="color: rgb(252, 252, 252)"></span>&nbsp; Log In
+              <span class="fa fa-sign-in"></span>&nbsp; Log In
             </a>
           </li>
 
           <li class="nav-item-right">
             <a class="nav-link" href="/register">
-              <span class="fa fa-user-plus" style="color: rgb(252, 252, 252)"></span>&nbsp; Sign Up
+              <span class="fa fa-user-plus"></span>&nbsp; Sign Up
             </a>
           </li>
         {% endif %}
