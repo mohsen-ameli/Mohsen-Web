@@ -22,27 +22,28 @@
         </div>
 
         <div class="row">
-
-          <form action="{% url 'blog:home' %}">
-            <div style="margin-left: 15px;">
-              <button class="btn btn-outline-light">Home Page</button>
-            </div>
-          </form>
-
-          <form action="{{ post.get_update_url }}">
-            <div style="margin-left: 5px;">
-              <button class="btn btn-outline-info">Update</button>
-            </div>
-          </form>
-
-          <form action="{{ post.get_delete_url }}">
-            <div style="margin-left: 5px;">
-              <button class="btn btn-outline-danger">DELETE</button>
-            </div>
-          </form>
-
+        
+          {% if post.user == user %}
+            <form action="{{ post.get_update_url }}">
+              <div style="margin-left: 5px;">
+                <button class="btn btn-outline-info">Update</button>
+              </div>
+            </form>
+        
+            <form action="{{ post.get_delete_url }}">
+              <div style="margin-left: 5px;">
+                <button class="btn btn-outline-danger">DELETE</button>
+              </div>
+            </form>
+          {% endif %}
+            <form action="{% url 'blog:home' %}">
+              <div style="margin-left: 15px;">
+                <button class="btn btn-outline-warning">Home Page</button>
+              </div>
+            </form>
+        
         </div>
-      </div>
+        <p class="card-text"><small class="text-muted" style="margin-bottom: 20px">By {{ post.user }}</small></p>      </div>
     </div>
   </div>
   <br/>
@@ -84,25 +85,6 @@
           <footer><small class="text-muted">By {{ comment.user }} | {{ comment.publish_date|timesince }} ago</small></footer>
         </blockquote>
       </div>
-      
-      
-      <!--
-      <div class="col-12 col-md-a0 mb-0 mx-auto">
-        <div class="card bg-warning text-white">
-          <div class="card-body">
-
-            <div class="card-title">
-              <a>{{ comment.title }}</a>
-              <small class="text-muted">{{ comment.publish_date|timesince }}</small>
-            </div>
-
-            <div class="card-text">
-              <p>{{ comment.content }}</p>
-            </div>
-
-          </div>
-        </div>
-      </div>-->
       
   {% endfor %}
   <!--Ending-->
