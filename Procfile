@@ -1,1 +1,1 @@
-web: gunicorn try-django-heroku.wsgi
+web: gunicorn try_dajngo.wsgi
