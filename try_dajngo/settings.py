@@ -130,12 +130,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
-LANGUAGE_CODE = 'en-us'
-TIME_ZONE = 'UTC'
-USE_I18N = True
-USE_L10N = True
-USE_TZ = True
-
 LOGIN_REDIRECT_URL = "home"
 
 STATIC_ROOT = os.path.join (BASE_DIR, 'staticfiles')
@@ -154,4 +148,4 @@ AWS_S3_REGION_NAME = 'us-east-2'
 
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
-django_heroku.settings(locals())
+#django_heroku.settings(locals())
