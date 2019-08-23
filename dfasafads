@@ -1,0 +1,203 @@
+[33mcommit 4c4b5c3d13124ea2c796ae50958ba4da7639a708[m[33m ([m[1;36mHEAD -> [m[1;32mnavbar[m[33m)[m
+Author: Mohsen Ameli <mohsen.ameli83@gmail.com>
+Date:   Fri Aug 23 17:04:12 2019 -0400
+
+    changes
+
+[33mcommit 8570d87d14ac8067b2f04ff5c0ca564ee55050f6[m
+Author: Mohsen Ameli <mohsen.ameli83@gmail.com>
+Date:   Fri Aug 23 16:52:02 2019 -0400
+
+    id of navbar changed
+
+[33mcommit 30738c9e329c7180a8a98a94f732f44fd6b2b661[m[33m ([m[1;31mheroku/master[m[33m, [m[1;32mmaster[m[33m)[m
+Author: Mohsen Ameli <mohsen.ameli83@gmail.com>
+Date:   Fri Aug 23 16:25:19 2019 -0400
+
+    mobile displat
+
+[33mcommit 2eb40609c286e508fc48796695f3b014187442af[m
+Author: Mohsen Ameli <mohsen.ameli83@gmail.com>
+Date:   Fri Aug 23 16:17:46 2019 -0400
+
+    mobile displat
+
+[33mcommit 90895146cc7ef19e4c5f96b2eb214cdd88c2bf6c[m
+Author: Mohsen Ameli <mohsen.ameli83@gmail.com>
+Date:   Fri Aug 23 15:49:30 2019 -0400
+
+    localhost
+
+[33mcommit ee355396b5ef22635b06d57f41204605be7aafd0[m
+Author: Mohsen Ameli <mohsen.ameli83@gmail.com>
+Date:   Fri Aug 23 15:43:29 2019 -0400
+
+    some stuff added
+
+[33mcommit 2157953321df2c752daa5e10c23fc2a4042efc5b[m
+Author: Mohsen Ameli <mohsen.ameli83@gmail.com>
+Date:   Fri Aug 23 15:34:38 2019 -0400
+
+    debug == false
+
+[33mcommit 05e6eb7fa8d40261aed019224b612d13c07aa3ff[m
+Author: Mohsen Ameli <mohsen.ameli83@gmail.com>
+Date:   Fri Aug 23 15:27:17 2019 -0400
+
+    abc3
+
+[33mcommit 72814b58697efb509ed3fa5bf710d6b6de90451c[m
+Author: Mohsen Ameli <mohsen.ameli83@gmail.com>
+Date:   Fri Aug 23 14:58:57 2019 -0400
+
+    migrations
+
+[33mcommit 81f60b5f70cf2d6af07a96c2af7a89b9dc8553a5[m
+Author: Mohsen Ameli <mohsen.ameli83@gmail.com>
+Date:   Fri Aug 23 14:55:34 2019 -0400
+
+    migrations
+
+[33mcommit 37853584a0f0879a020719de92d7ad078c459d0a[m
+Author: Mohsen Ameli <mohsen.ameli83@gmail.com>
+Date:   Fri Aug 23 14:47:03 2019 -0400
+
+    user
+
+[33mcommit baedbf124daf037037d5322b3f0e07c7c8bfaf64[m
+Author: Mohsen Ameli <mohsen.ameli83@gmail.com>
+Date:   Fri Aug 23 14:46:04 2019 -0400
+
+    user
+
+[33mcommit 168dbc2bb26c181e3cc98e995a4fac96b79ce1ae[m
+Author: Mohsen Ameli <mohsen.ameli83@gmail.com>
+Date:   Fri Aug 23 14:30:47 2019 -0400
+
+    django.contrib.sites
+
+[33mcommit 98238b0a477168aac7aaf377603dbff0bb57380b[m
+Author: Mohsen Ameli <mohsen.ameli83@gmail.com>
+Date:   Fri Aug 23 14:20:54 2019 -0400
+
+    nothing
+
+[33mcommit f0a12fa6fc17a75aa7b3be6f0a5c1d9ad2a8620e[m
+Author: Mohsen Ameli <mohsen.ameli83@gmail.com>
+Date:   Fri Aug 23 14:09:38 2019 -0400
+
+    django_heroku added
+
+[33mcommit 7fe457d10ee6b54cbd9905c1126b0e3f17291cb4[m
+Author: Mohsen Ameli <mohsen.ameli83@gmail.com>
+Date:   Fri Aug 23 14:05:26 2019 -0400
+
+    django_heroku added
+
+[33mcommit 1dd159960cea699180cbb9b03b092f3f1a239f01[m
+Author: Mohsen Ameli <mohsen.ameli83@gmail.com>
+Date:   Thu Aug 22 23:25:18 2019 -0400
+
+    abc2
+
+[33mcommit a68d83723824addee284e02549fb20c5dcaf1d73[m
+Author: Mohsen Ameli <mohsen.ameli83@gmail.com>
+Date:   Thu Aug 22 23:00:07 2019 -0400
+
+    test
+
+[33mcommit 824e9035afc9be7bbad15c0aabea1547cc80e22d[m
+Author: Mohsen Ameli <mohsen.ameli83@gmail.com>
+Date:   Thu Aug 22 22:58:02 2019 -0400
+
+    test
+
+[33mcommit 57991ef13273d3942e926481bc0e7aaf0a021dd6[m
+Author: Mohsen Ameli <mohsen.ameli83@gmail.com>
+Date:   Thu Aug 22 22:49:26 2019 -0400
+
+    abc
+
+[33mcommit 56dde96c776fd2bc37eaba54f2401221d8c35488[m
+Author: Mohsen Ameli <mohsen.ameli83@gmail.com>
+Date:   Thu Aug 22 22:17:11 2019 -0400
+
+    some initial stuff
+
+[33mcommit 6a41f0b968193755241f97f349481aefb4c8673d[m
+Author: Mohsen Ameli <mohsen.ameli83@gmail.com>
+Date:   Thu Aug 22 22:13:32 2019 -0400
+
+    procfile fixed
+
+[33mcommit f6bc0c4052642f386a10fa8736a648fa9dc73ee4[m
+Author: Mohsen Ameli <mohsen.ameli83@gmail.com>
+Date:   Thu Aug 22 22:05:02 2019 -0400
+
+    nothing special really
+
+[33mcommit a412c1b2993b52083f3d0e4a14372916891cd067[m
+Author: Mohsen Ameli <mohsen.ameli83@gmail.com>
+Date:   Thu Aug 22 21:51:52 2019 -0400
+
+    added procfile and edited settings
+
+[33mcommit 92eb334cc6f0fd1f4d4dbad7220fb9d1b2770ad1[m
+Author: Mohsen Ameli <mohsen.ameli83@gmail.com>
+Date:   Thu Aug 22 21:43:35 2019 -0400
+
+    Initial Commit
+
+[33mcommit e5404242535ead544bf17606aa9db0ce9bafb873[m
+Author: Mohsen Ameli <mohsen.ameli83@gmail.com>
+Date:   Mon Aug 19 16:42:31 2019 -0400
+
+    fixing AWS
+
+[33mcommit 624d8b8c0e26565a8596941dc2242abe5dbc8c76[m
+Author: Mohsen Ameli <mohsen.ameli83@gmail.com>
+Date:   Mon Aug 19 15:25:14 2019 -0400
+
+    aws initial
+
+[33mcommit 170454c1bf9ec3c6129017da08f9fb2ae110e012[m
+Author: Mohsen Ameli <mohsen.ameli83@gmail.com>
+Date:   Mon Aug 19 15:10:27 2019 -0400
+
+    nothing special
+
+[33mcommit c301befa405672d71891cefac9e9f7fe2eb22801[m
+Author: Mohsen Ameli <mohsen.ameli83@gmail.com>
+Date:   Sun Aug 18 16:54:25 2019 -0400
+
+    Chinging Create Post View
+
+[33mcommit 40fe4fd04b351baba5978ef9b4a92a1f3262b216[m
+Author: Mohsen Ameli <mohsen.ameli83@gmail.com>
+Date:   Sun Aug 18 16:26:49 2019 -0400
+
+    changed the color of navbar to white
+
+[33mcommit e35472b5488759522db484e7eb17af9ae08b4cfa[m
+Author: Mohsen Ameli <mohsen.ameli83@gmail.com>
+Date:   Sun Aug 18 15:59:49 2019 -0400
+
+    src folder added
+
+[33mcommit a12bbe423edcfb7ca0dea92fe5c88729be67d047[m
+Author: Mohsen Ameli <mohsen.ameli83@gmail.com>
+Date:   Sun Aug 18 15:56:52 2019 -0400
+
+    finall sqlite
+
+[33mcommit 818ee269ef6fcacea916cd06c333b6c358b05d4b[m
+Author: Mohsen Ameli <mohsen.ameli83@gmail.com>
+Date:   Sun Aug 18 15:36:03 2019 -0400
+
+    working with sqlite3
+
+[33mcommit 73fb93585660e9d057890cb72e44422272a6f646[m
+Author: Mohsen Ameli <mohsen.ameli83@gmail.com>
+Date:   Sun Aug 18 15:26:09 2019 -0400
+
+    Initial Commitment
