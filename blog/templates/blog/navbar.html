@@ -22,10 +22,14 @@
           </a>
         </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="https://persiaempire.herokuapp.com/">
-            <span class="fas fa-crown"></span>&nbsp; Persian Empire
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+            <span class="fas fa-crown" aria-hidden="true"></span>&nbsp; My websites
           </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="https://persiaempire.herokuapp.com/">Persian Empire</a>
+            <!-- <a class="dropdown-item" href="https://mohsenweb.herokuapp.com/">Mohsen Web</a> -->
+          </div>
         </li>
 
         {% if user.is_authenticated %}
